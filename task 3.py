@@ -6,7 +6,7 @@ if 2000<=year<=3000:
     x = datetime.datetime(year,month,day)
     day_name = x.strftime("%A").upper()
     print(day_name)
-else:
+else: 
     print("year is not within the specified constraints:")
 
 
