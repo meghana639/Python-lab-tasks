@@ -2,7 +2,7 @@
 principle  = float(input("enter the principle amount:"))
 rate = float(input("enter the rate of interest:"))
 time = float(input("enter the time in years:"))
-compuond_interest = principle*((1+rate/100)*time)-principle
+compuond_interest = principle*((1+rate/100)*time)-principle 
 print("the compound interest is:",compuond_interest)
 
 # task 1 2:
