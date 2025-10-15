@@ -62,29 +62,3 @@ with open('apple_quality.csv','r') as file:
     data=csv.reader(file)
     for row in data:
         print(row)
-
-# task 7 1:
-def find_discount(qty):
-    if qty <= 10:
-        return 0
-    elif 11 <= qty <= 20:
-        return 15
-    else:
-        return 20
-def buy():
-    icode = int(input("ener item code:"))
-    item = input("enter item name:")
-    price = float(input("enter price:"))
-    Qty = int(input("enter quantity:"))
-    discount = find_discount(Qty)
-    netprice = price * Qty - discount
-    return icode,item,price,Qty,discount,netprice
-def show_all(icode,item,price,Qty,discount,netprice):
-    print("item code:",icode)
-    print("item:",item)
-    print('price:',price)
-    print("quantity:",Qty)
-    print("discount:",discount)
-    print("net price:",netprice)
-icode,item,price,Qty,discount,netprice = buy()
-show_all(icode,item,price,Qty,discount,netprice) 
